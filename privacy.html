@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Datenschutzerklärung von Inter Driver. Informationen zum Schutz Ihrer persönlichen Daten gemäß DSGVO.">
+    <title>Datenschutzerklärung - Inter Driver</title>
+    <link rel="canonical" href="http://inter-driver.onrender.app/privacy.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.onrender.app/privacy.html">
+    
+    <style>
+        :root {
+            --primary-color: #d97706;
+            --secondary-color: #92400e;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #fffbeb;
+            --bg-white: #ffffff;
+            --border-color: #fde68a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            color: var(--secondary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-box {
+            background-color: var(--bg-light);
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--bg-white);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--bg-light);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--bg-light);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Inter Driver</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="how-it-works.html">So funktioniert's</a></li>
+                        <li><a href="pricing.html">Preise</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Datenschutzerklärung</h1>
+                <p>Stand: 22. Februar 2026</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container content-section">
+                <div class="info-box">
+                    <strong>Wichtige Information:</strong> Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. In dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung unserer Website und unserer Dienstleistungen.
+                </div>
+
+                <h2>1. Verantwortlicher</h2>
+                <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+                <p>
+                    Inter Driver<br>
+                    Belgien<br>
+                    E-Mail: info@inter-driver.be<br>
+                    Telefon: +32 2 123 4567
+                </p>
+
+                <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
+                
+                <h3>2.1 Beim Besuch der Website</h3>
+                <p>Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht registrieren oder uns anderweitig Informationen übermitteln, erheben wir nur solche Daten, die Ihr Browser an unseren Server übermittelt. Diese technisch notwendigen Daten umfassen:</p>
+                <ul>
+                    <li>IP-Adresse</li>
+                    <li>Datum und Uhrzeit der Anfrage</li>
+                    <li>Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
+                    <li>Inhalt der Anforderung (konkrete Seite)</li>
+                    <li>Zugriffsstatus/HTTP-Statuscode</li>
+                    <li>Jeweils übertragene Datenmenge</li>
+                    <li>Website, von der die Anforderung kommt</li>
+                    <li>Browser und Betriebssystem</li>
+                    <li>Sprache und Version der Browsersoftware</li>
+                </ul>
+
+                <h3>2.2 Bei Nutzung unseres Kontaktformulars</h3>
+                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten umfassen:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>E-Mail-Adresse</li>
+                    <li>Telefonnummer (optional)</li>
+                    <li>Ihre Nachricht und weitere freiwillige Angaben</li>
+                </ul>
+
+                <h3>2.3 Bei Buchung unserer Dienstleistungen</h3>
+                <p>Für die Durchführung unserer Transportdienstleistungen erheben wir folgende Daten:</p>
+                <ul>
+                    <li>Name und Kontaktdaten</li>
+                    <li>Abholort und Zielort</li>
+                    <li>Datum und Uhrzeit der Fahrt</li>
+                    <li>Anzahl der Passagiere</li>
+                    <li>Besondere Anforderungen</li>
+                    <li>Zahlungsinformationen</li>
+                </ul>
+
+                <h2>3. Zweck der Datenverarbeitung</h2>
+                <p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt zu folgenden Zwecken:</p>
+                <ul>
+                    <li><strong>Vertragsdurchführung:</strong> Zur Erbringung unserer Transportdienstleistungen</li>
+                    <li><strong>Kommunikation:</strong> Zur Beantwortung von Anfragen und Kundenbetreuung</li>
+                    <li><strong>Abrechnung:</strong> Zur Erstellung von Rechnungen und Zahlungsabwicklung</li>
+                    <li><strong>Qualitätssicherung:</strong> Zur Verbesserung unserer Dienstleistungen</li>
+                    <li><strong>Rechtliche Verpflichtungen:</strong> Zur Erfüllung gesetzlicher Aufbewahrungspflichten</li>
+                </ul>
+
+                <h2>4. Rechtsgrundlage der Verarbeitung</h2>
+                <p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Grundlage von:</p>
+                <ul>
+                    <li><strong>Art. 6 Abs. 1 lit. b DSGVO:</strong> Vertragserfüllung und vorvertragliche Maßnahmen</li>
+                    <li><strong>Art. 6 Abs. 1 lit. c DSGVO:</strong> Erfüllung rechtlicher Verpflichtungen</li>
+                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO:</strong> Berechtigte Interessen (z.B. zur Gewährleistung der IT-Sicherheit)</li>
+                    <li><strong>Art. 6 Abs. 1 lit. a DSGVO:</strong> Ihre Einwilligung, soweit diese eingeholt wurde</li>
+                </ul>
+
+                <h2>5. Weitergabe von Daten</h2>
+                <p>Eine Weitergabe Ihrer personenbezogenen Daten an Dritte erfolgt nur, wenn:</p>
+                <ul>
+                    <li>Sie ausdrücklich eingewilligt haben (Art. 6 Abs. 1 lit. a DSGVO)</li>
+                    <li>Dies zur Vertragserfüllung erforderlich ist (z.B. an Zahlungsdienstleister)</li>
+                    <li>Eine gesetzliche Verpflichtung besteht (Art. 6 Abs. 1 lit. c DSGVO)</li>
+                    <li>Die Weitergabe zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist</li>
+                </ul>
+
+                <h2>6. Dauer der Speicherung</h2>
+                <p>Wir speichern Ihre personenbezogenen Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Nach Ablauf dieser Fristen werden die Daten routinemäßig gelöscht, sofern keine weitere Verarbeitung erforderlich ist.</p>
+                <p>Konkret bedeutet dies:</p>
+                <ul>
+                    <li><strong>Kontaktanfragen:</strong> Bis zur vollständigen Bearbeitung Ihrer Anfrage, danach Löschung nach spätestens 12 Monaten</li>
+                    <li><strong>Buchungsdaten:</strong> Für die Dauer der Vertragsbeziehung plus gesetzliche Aufbewahrungsfristen (i.d.R. 7-10 Jahre)</li>
+                    <li><strong>Server-Logdateien:</strong> Automatische Löschung nach 30 Tagen</li>
+                </ul>
+
+                <h2>7. Ihre Rechte</h2>
+                <p>Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+                <ul>
+                    <li><strong>Recht auf Auskunft:</strong> Sie können Auskunft über die von uns verarbeiteten Daten verlangen</li>
+                    <li><strong>Recht auf Berichtigung:</strong> Sie können die Berichtigung unrichtiger Daten verlangen</li>
+                    <li><strong>Recht auf Löschung:</strong> Sie können die Löschung Ihrer Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten bestehen</li>
+                    <li><strong>Recht auf Einschränkung:</strong> Sie können die Einschränkung der Verarbeitung verlangen</li>
+                    <li><strong>Recht auf Datenübertragbarkeit:</strong> Sie können Ihre Daten in einem strukturierten, gängigen Format erhalten</li>
+                    <li><strong>Widerspruchsrecht:</strong> Sie können der Verarbeitung Ihrer Daten widersprechen</li>
+                    <li><strong>Recht auf Widerruf:</strong> Sie können erteilte Einwilligungen jederzeit widerrufen</li>
+                </ul>
+
+                <h2>8. Beschwerderecht</h2>
+                <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+
+                <h2>9. Datensicherheit</h2>
+                <p>Wir verwenden geeignete technische und organisatorische Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, Verlust, Zerstörung oder gegen den Zugriff unberechtigter Personen zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.</p>
+
+                <h2>10. Cookies</h2>
+                <p>Diese Website verwendet derzeit keine Cookies. Sollte sich dies ändern, werden wir Sie entsprechend informieren und Ihre Einwilligung einholen, sofern erforderlich.</p>
+
+                <h2>11. Externe Links</h2>
+                <p>Unsere Website kann Links zu externen Websites enthalten. Für die Inhalte und Datenschutzpraktiken dieser externen Seiten sind wir nicht verantwortlich. Bitte informieren Sie sich dort über die jeweiligen Datenschutzbestimmungen.</p>
+
+                <h2>12. Änderungen dieser Datenschutzerklärung</h2>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen unserer Dienstleistungen sowie der Datenverarbeitung anzupassen. Für erneute Besuche gilt dann die jeweils aktuelle Datenschutzerklärung.</p>
+
+                <h2>13. Kontakt</h2>
+                <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Sperrung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen wenden Sie sich bitte an:</p>
+                <p>
+                    Inter Driver<br>
+                    E-Mail: info@inter-driver.be<br>
+                    Telefon: +32 2 123 4567
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Inter Driver</h3>
+                    <p>Ihr zuverlässiger Partner für professionelle Transportdienstleistungen in Belgien.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Schnelllinks</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Inter Driver. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

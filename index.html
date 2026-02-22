@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Inter Driver bietet professionelle Transportdienstleistungen in Belgien. Zuverlässige Fahrer für Ihre privaten und geschäftlichen Transportbedürfnisse mit höchster Servicequalität.">
+    <title>Inter Driver - Professioneller Transportservice in Belgien</title>
+    <link rel="canonical" href="http://inter-driver.onrender.app">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.onrender.app">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Inter Driver - Professioneller Transportservice in Belgien">
+    <meta property="og:description" content="Zuverlässige Transportdienstleistungen mit professionellen Fahrern für Ihre privaten und geschäftlichen Bedürfnisse in Belgien.">
+    <meta property="og:url" content="http://inter-driver.onrender.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_BE">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TransportationCompany",
+        "name": "Inter Driver",
+        "url": "http://inter-driver.onrender.app",
+        "logo": "http://inter-driver.onrender.app/logo.png",
+        "description": "Professionelle Transportdienstleistungen in Belgien",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.369963",
+            "longitude": "0.945865"
+        },
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Belgium"
+        },
+        "priceRange": "€€",
+        "areaServed": "BE"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #d97706;
+            --secondary-color: #92400e;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #fffbeb;
+            --bg-white: #ffffff;
+            --border-color: #fde68a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-alt {
+            background-color: var(--bg-light);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit-card {
+            background-color: var(--bg-white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .map-section {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .map-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+        
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content-section p {
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+        
+        .services-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .service-item {
+            padding: 1.5rem;
+            background-color: var(--bg-white);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--bg-white);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--bg-light);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--bg-light);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .map-container iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Inter Driver</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="how-it-works.html">So funktioniert's</a></li>
+                        <li><a href="pricing.html">Preise</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Inter Driver - Ihr zuverlässiger Transportpartner</h1>
+                <p class="hero-subtitle">Professionelle Fahrer für alle Ihre Transportbedürfnisse in Belgien</p>
+                <a href="contact.html" class="cta-button">Jetzt Anfrage senden</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container content-section">
+                <p>Willkommen bei Inter Driver, Ihrem vertrauenswürdigen Partner für professionelle Transportdienstleistungen in ganz Belgien. In einer Welt, in der Mobilität und Flexibilität immer wichtiger werden, verstehen wir die Bedeutung eines zuverlässigen und komfortablen Transportservices. Ob Sie einen <a href="https://interdrivers.be/entreprise-de-transport-prive-a-bruxelles/" rel="nofollow">driver transport</a> für geschäftliche Termine, Flughafentransfers oder private Anlässe benötigen – wir sind für Sie da.</p>
+
+                <p>Unser Unternehmen hat sich auf die Bereitstellung hochwertiger Fahrdienste spezialisiert, die Ihre Erwartungen nicht nur erfüllen, sondern übertreffen. Mit jahrelanger Erfahrung im Transportsektor haben wir uns einen ausgezeichneten Ruf für Pünktlichkeit, Professionalität und Kundenservice erarbeitet. Unsere Fahrer sind nicht nur hochqualifiziert und lizenziert, sondern auch mit den lokalen Gegebenheiten bestens vertraut, was Ihnen eine stressfreie und effiziente Reise garantiert.</p>
+
+                <p>Bei Inter Driver legen wir größten Wert auf Ihre Sicherheit und Ihren Komfort. Alle unsere Fahrzeuge werden regelmäßig gewartet und entsprechen den höchsten Sicherheitsstandards. Wir bieten eine moderne Flotte von Fahrzeugen, die für verschiedene Anlässe und Gruppengrößen geeignet sind – von eleganten Limousinen für Geschäftsreisen bis hin zu geräumigen Vans für Gruppenausflüge. Jedes Fahrzeug ist mit modernster Technologie ausgestattet, um Ihnen während der Fahrt maximalen Komfort zu bieten.</p>
+
+                <h2>Warum professionelle Fahrer die bessere Wahl sind</h2>
+
+                <p>Die Entscheidung für einen professionellen Fahrer bringt zahlreiche Vorteile mit sich, die weit über die reine Fortbewegung hinausgehen. Zunächst einmal sparen Sie wertvolle Zeit, die Sie stattdessen für produktive Arbeit, Entspannung oder die Vorbereitung auf wichtige Meetings nutzen können. Statt sich durch den dichten Verkehr zu kämpfen oder nach Parkplätzen zu suchen, können Sie sich zurücklehnen und Ihre Reise genießen.</p>
+
+                <p>Ein weiterer wesentlicher Vorteil ist die lokale Expertise unserer Fahrer. Sie kennen nicht nur die schnellsten Routen, sondern auch alternative Wege, um Staus zu vermeiden. Dies ist besonders in Ballungsräumen von unschätzbarem Wert, wo Verkehrsbehinderungen an der Tagesordnung sind. Unsere Fahrer nutzen moderne Navigationstechnologie und ihr umfangreiches Streckenwissen, um Sie stets pünktlich ans Ziel zu bringen.</p>
+
+                <p>Für Geschäftsreisende bieten wir einen diskreten und professionellen Service, der es Ihnen ermöglicht, unterwegs zu arbeiten oder wichtige Telefonate zu führen. Unsere Fahrzeuge sind mit WLAN, Ladestationen und anderen Annehmlichkeiten ausgestattet, die Ihre mobile Produktivität unterstützen. Darüber hinaus verstehen unsere Fahrer die Bedeutung von Vertraulichkeit und Professionalität, wenn es um geschäftliche Angelegenheiten geht.</p>
+
+                <h3>Maßgeschneiderte Lösungen für jeden Bedarf</h3>
+
+                <p>Wir verstehen, dass jeder Kunde einzigartige Anforderungen hat. Deshalb bieten wir flexible und maßgeschneiderte Transportlösungen an. Ob Sie einen einmaligen Transfer benötigen oder regelmäßige Fahrten planen – wir passen unsere Dienstleistungen Ihren spezifischen Bedürfnissen an. Unser Buchungssystem ist benutzerfreundlich und ermöglicht es Ihnen, Ihre Fahrt mit nur wenigen Klicks zu planen.</p>
+
+                <p>Für Unternehmen bieten wir spezielle Firmenpakete an, die regelmäßige Mitarbeitertransporte, Flughafentransfers für Geschäftsreisende oder Gästetransporte für Veranstaltungen umfassen. Diese Pakete sind kostengünstig und bieten Ihnen die Sicherheit, dass Ihre Transportbedürfnisse professionell abgewickelt werden. Wir können auch langfristige Vereinbarungen treffen, die Ihnen Planungssicherheit und bevorzugte Konditionen bieten.</p>
+
+                <p>Private Kunden schätzen unsere Dienstleistungen für besondere Anlässe wie Hochzeiten, Geburtstagsfeiern oder Stadtführungen. Wir sorgen dafür, dass Ihre besonderen Momente noch unvergesslicher werden, indem wir für einen reibungslosen und stilvollen Transport sorgen. Unsere Fahrer sind pünktlich, höflich und diskret, sodass Sie sich voll und ganz auf Ihr Event konzentrieren können.</p>
+
+                <h3>Nachhaltigkeit und Innovation im Transportwesen</h3>
+
+                <p>In der heutigen Zeit ist Nachhaltigkeit ein wichtiges Thema, das auch uns am Herzen liegt. Wir arbeiten kontinuierlich daran, unseren ökologischen Fußabdruck zu reduzieren, indem wir umweltfreundliche Fahrzeuge in unsere Flotte integrieren und effiziente Routen planen, um den Kraftstoffverbrauch zu minimieren. Wir glauben, dass professioneller Service und Umweltbewusstsein Hand in Hand gehen können.</p>
+
+                <p>Innovation ist ein weiterer Eckpfeiler unseres Unternehmens. Wir investieren in moderne Technologien, die sowohl die Effizienz unserer Dienstleistungen als auch Ihr Fahrerlebnis verbessern. Von der Online-Buchung über Echtzeit-Tracking bis hin zu digitalen Zahlungsmöglichkeiten – wir nutzen die neuesten Tools, um Ihnen den bestmöglichen Service zu bieten.</p>
+
+                <h3>Sicherheit steht an erster Stelle</h3>
+
+                <p>Die Sicherheit unserer Fahrgäste hat für uns oberste Priorität. Alle unsere Fahrer durchlaufen ein gründliches Auswahlverfahren, das Hintergrundprüfungen, Führerscheinvalidierungen und persönliche Interviews umfasst. Darüber hinaus nehmen sie regelmäßig an Schulungen teil, die sowohl sicheres Fahren als auch exzellenten Kundenservice abdecken.</p>
+
+                <p>Unsere Fahrzeuge werden nach strengen Wartungsplänen gewartet und regelmäßig inspiziert, um sicherzustellen, dass sie den höchsten Sicherheitsstandards entsprechen. Wir sind vollständig versichert und verfügen über alle erforderlichen Lizenzen, um unsere Dienstleistungen legal und professionell anzubieten. Dies gibt Ihnen die Gewissheit, dass Sie in sicheren Händen sind.</p>
+
+                <h3>Kundenservice, der begeistert</h3>
+
+                <p>Unser Engagement für exzellenten Kundenservice unterscheidet uns von anderen Anbietern. Wir sind rund um die Uhr für Sie erreichbar und beantworten Ihre Anfragen schnell und kompetent. Ob Sie eine Buchung vornehmen, eine Frage haben oder eine besondere Anforderung mitteilen möchten – unser freundliches Team steht Ihnen jederzeit zur Verfügung.</p>
+
+                <p>Wir hören auf das Feedback unserer Kunden und nutzen es, um unsere Dienstleistungen kontinuierlich zu verbessern. Ihre Zufriedenheit ist unser Erfolg, und wir tun alles, um sicherzustellen, dass jede Fahrt mit Inter Driver eine positive Erfahrung ist. Viele unserer Kunden kommen immer wieder zu uns zurück und empfehlen uns weiter – das ist das größte Kompliment, das wir erhalten können.</p>
+
+                <p>Entdecken Sie mehr über unsere verschiedenen <a href="services.html">Dienstleistungen</a> und erfahren Sie, wie wir Ihnen helfen können, Ihre Transportbedürfnisse zu erfüllen. Wir freuen uns darauf, Sie bald als Fahrgast begrüßen zu dürfen und Ihnen zu zeigen, warum Inter Driver die erste Wahl für professionelle Transportdienstleistungen in Belgien ist.</p>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div class="container">
+                <h2>Unsere Vorteile auf einen Blick</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <span class="benefit-icon">⏰</span>
+                        <h3>Pünktlichkeit garantiert</h3>
+                        <p>Wir wissen, wie wichtig Ihre Zeit ist. Unsere Fahrer sind immer pünktlich und bringen Sie zuverlässig ans Ziel.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">🚗</span>
+                        <h3>Moderne Fahrzeugflotte</h3>
+                        <p>Reisen Sie in Komfort mit unseren regelmäßig gewarteten, modernen Fahrzeugen für jeden Anlass.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">👨‍✈️</span>
+                        <h3>Professionelle Fahrer</h3>
+                        <p>Hochqualifizierte und erfahrene Fahrer mit ausgezeichneten lokalen Kenntnissen und Kundenservice.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">🌍</span>
+                        <h3>Belgienweiter Service</h3>
+                        <p>Wir bieten unsere Dienstleistungen in ganz Belgien an – von Brüssel bis an die Küste.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">💼</span>
+                        <h3>Business & Privat</h3>
+                        <p>Maßgeschneiderte Lösungen für Geschäftsreisende und private Kunden mit individuellen Bedürfnissen.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">🛡️</span>
+                        <h3>Sicherheit & Versicherung</h3>
+                        <p>Vollversichert und lizenziert – Ihre Sicherheit ist unsere oberste Priorität.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Unser Standort</h2>
+                <p>Besuchen Sie uns oder kontaktieren Sie uns für weitere Informationen über unsere Dienstleistungen.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d728586.1611267922!2d0.945865!3d41.369963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x694081610ff33f11%3A0xad968267c0c710a4!2sINTER%20DRIVERS!5e1!3m2!1sen!2sph!4v1771784727003!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Inter Driver</h3>
+                    <p>Ihr zuverlässiger Partner für professionelle Transportdienstleistungen in Belgien.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Schnelllinks</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Inter Driver. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

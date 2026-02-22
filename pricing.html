@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Transparente Preise für professionelle Transportdienstleistungen. Individuelle Angebote für Ihre Bedürfnisse bei Inter Driver.">
+    <title>Preise - Inter Driver</title>
+    <link rel="canonical" href="http://inter-driver.onrender.app/pricing.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.onrender.app/pricing.html">
+    
+    <style>
+        :root {
+            --primary-color: #d97706;
+            --secondary-color: #92400e;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #fffbeb;
+            --bg-white: #ffffff;
+            --border-color: #fde68a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pricing-card {
+            background-color: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary-color);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.featured {
+            border-top-color: var(--accent-color);
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+        }
+        
+        .pricing-title {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .price-tag {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .pricing-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .section-alt {
+            background-color: var(--bg-light);
+        }
+        
+        .quote-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .submit-button {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .info-box {
+            background-color: var(--bg-light);
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--bg-white);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--bg-light);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--bg-light);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Inter Driver</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="how-it-works.html">So funktioniert's</a></li>
+                        <li><a href="pricing.html">Preise</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Unsere Preise</h1>
+                <p>Transparente und faire Preise für professionellen Transportservice</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container content-section">
+                <p>Bei Inter Driver glauben wir an transparente Preisgestaltung ohne versteckte Kosten. Unsere Preise richten sich nach verschiedenen Faktoren wie Entfernung, Fahrzeugtyp, Tageszeit und individuellen Anforderungen. Nachfolgend finden Sie eine Übersicht unserer Service-Kategorien.</p>
+                
+                <div class="info-box">
+                    <strong>Hinweis:</strong> Alle Preise verstehen sich als Richtwerte. Für ein individuelles und verbindliches Angebot kontaktieren Sie uns bitte über das untenstehende Formular oder telefonisch.
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Standard</h3>
+                        <p class="price-tag">Ab 45 € pro Fahrt</p>
+                        <ul class="pricing-features">
+                            <li>Stadtfahrten (bis 15 km)</li>
+                            <li>Komfortable Limousinen</li>
+                            <li>Professioneller Fahrer</li>
+                            <li>Klimaanlage inklusive</li>
+                            <li>Gepäckservice</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <h3 class="pricing-title">Business</h3>
+                        <p class="price-tag">Ab 75 € pro Fahrt</p>
+                        <ul class="pricing-features">
+                            <li>Alle Standard-Leistungen</li>
+                            <li>Premium-Fahrzeuge</li>
+                            <li>WLAN & Ladestationen</li>
+                            <li>Wasserflaschen inklusive</li>
+                            <li>Flexible Wartezeiten</li>
+                            <li>Rechnungsstellung für Firmen</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Flughafentransfer</h3>
+                        <p class="price-tag">Ab 65 € pro Fahrt</p>
+                        <ul class="pricing-features">
+                            <li>Alle belgischen Flughäfen</li>
+                            <li>Flugverfolgung in Echtzeit</li>
+                            <li>60 Min. kostenlose Wartezeit</li>
+                            <li>Gepäckhilfe inklusive</li>
+                            <li>Meet & Greet Service</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Stundenbuchung</h3>
+                        <p class="price-tag">Ab 50 € pro Stunde</p>
+                        <ul class="pricing-features">
+                            <li>Mindestbuchung: 3 Stunden</li>
+                            <li>Flexible Routenplanung</li>
+                            <li>Mehrere Stopps möglich</li>
+                            <li>Ideal für Stadttouren</li>
+                            <li>Shopping-Begleitung</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Event-Transport</h3>
+                        <p class="price-tag">Auf Anfrage</p>
+                        <ul class="pricing-features">
+                            <li>Hochzeiten & Feiern</li>
+                            <li>Luxus-Fahrzeuge verfügbar</li>
+                            <li>Dekorationsoptionen</li>
+                            <li>Mehrere Fahrzeuge koordiniert</li>
+                            <li>Individuelle Planung</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Langstrecke</h3>
+                        <p class="price-tag">Ab 1,50 € pro km</p>
+                        <ul class="pricing-features">
+                            <li>Fahrten innerhalb Belgiens</li>
+                            <li>Grenzüberschreitende Fahrten</li>
+                            <li>Komfort-Fahrzeuge</li>
+                            <li>Pausen nach Absprache</li>
+                            <li>Festpreisangebote verfügbar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div class="container content-section">
+                <h2>Zusätzliche Informationen</h2>
+                
+                <h3>Was ist im Preis enthalten?</h3>
+                <p>Unsere Preise beinhalten immer: professionellen Fahrer, Kraftstoff, Fahrzeugversicherung, alle Mautgebühren und Parkkosten während der Fahrt. Zusätzlich bieten wir kostenloses WLAN in unseren Business-Fahrzeugen sowie Getränke auf Anfrage.</p>
+
+                <h3>Zahlungsmöglichkeiten</h3>
+                <p>Wir akzeptieren Barzahlung, alle gängigen Kreditkarten sowie EC-Kartenzahlung. Für Geschäftskunden bieten wir bequeme Rechnungsstellung mit flexiblen Zahlungszielen an. Vorauszahlungen sind für größere Buchungen möglich und werden mit einem Rabatt belohnt.</p>
+
+                <h3>Stornierungsbedingungen</h3>
+                <p>Stornierungen sind bis zu 24 Stunden vor der geplanten Fahrt kostenfrei möglich. Bei kurzfristigeren Stornierungen berechnen wir 50% des Fahrpreises. Für Event-Buchungen gelten gesonderte Stornierungsbedingungen, die wir Ihnen bei der Buchung mitteilen.</p>
+
+                <h3>Firmenpakete & Rabatte</h3>
+                <p>Für Unternehmen und Vielfahrer bieten wir spezielle Pakete mit attraktiven Konditionen an. Kontaktieren Sie uns für ein individuelles Angebot, das auf Ihre spezifischen Bedürfnisse zugeschnitten ist.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Angebot anfordern</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Füllen Sie das untenstehende Formular aus, und wir senden Ihnen umgehend ein unverbindliches Angebot zu.</p>
+                
+                <form class="quote-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Gewünschte Dienstleistung *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Bitte wählen...</option>
+                            <option value="standard">Standardfahrt</option>
+                            <option value="business">Business-Fahrt</option>
+                            <option value="airport">Flughafentransfer</option>
+                            <option value="hourly">Stundenbuchung</option>
+                            <option value="event">Event-Transport</option>
+                            <option value="longdistance">Langstrecke</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Gewünschtes Datum</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="details">Weitere Details</label>
+                        <textarea id="details" name="details" rows="4" placeholder="Abholort, Zielort, Anzahl Passagiere, besondere Wünsche..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Angebot anfordern</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Inter Driver</h3>
+                    <p>Ihr zuverlässiger Partner für professionelle Transportdienstleistungen in Belgien.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Schnelllinks</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Inter Driver. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

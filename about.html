@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Erfahren Sie mehr über Inter Driver, unsere Mission und unser engagiertes Team professioneller Fahrer in Belgien.">
+    <title>Über uns - Inter Driver</title>
+    <link rel="canonical" href="http://inter-driver.onrender.app/about.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.onrender.app/about.html">
+    
+    <!-- Author Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael Weber",
+        "jobTitle": "Transportexperte und Geschäftsführer",
+        "description": "Mit über 15 Jahren Erfahrung in der Transportbranche hat Michael Weber Inter Driver zu einem führenden Anbieter professioneller Fahrdienste in Belgien entwickelt.",
+        "knowsAbout": ["Transportlogistik", "Kundenservice", "Flottenmanagement"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Inter Driver"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #d97706;
+            --secondary-color: #92400e;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #fffbeb;
+            --bg-white: #ffffff;
+            --border-color: #fde68a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .section-alt {
+            background-color: var(--bg-light);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-card {
+            background-color: var(--bg-white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .author-bio {
+            background-color: var(--bg-light);
+            padding: 3rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .author-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .author-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--bg-white);
+            flex-shrink: 0;
+        }
+        
+        .author-info h3 {
+            margin-bottom: 0.25rem;
+            color: var(--secondary-color);
+        }
+        
+        .author-title {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .author-expertise {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .byline {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--bg-white);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--bg-light);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--bg-light);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .author-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Inter Driver</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="how-it-works.html">So funktioniert's</a></li>
+                        <li><a href="pricing.html">Preise</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Über Inter Driver</h1>
+                <p>Lernen Sie unser Unternehmen und unsere Werte kennen</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container content-section">
+                <h2>Unsere Geschichte</h2>
+                <p>Inter Driver wurde mit einer klaren Vision gegründet: professionelle, zuverlässige und komfortable Transportdienstleistungen anzubieten, die die Erwartungen unserer Kunden übertreffen. Was als kleines Unternehmen mit nur wenigen Fahrzeugen begann, hat sich zu einem angesehenen Anbieter von Transportdienstleistungen in ganz Belgien entwickelt.</p>
+
+                <p>Unser Erfolg basiert auf einer einfachen Philosophie: Wir behandeln jeden Kunden so, wie wir selbst behandelt werden möchten. Diese Einstellung spiegelt sich in jedem Aspekt unseres Services wider – von der ersten Kontaktaufnahme über die Buchung bis hin zur Durchführung der Fahrt. Wir glauben fest daran, dass hervorragender Service nicht nur aus pünktlichen Fahrten besteht, sondern aus der gesamten Erfahrung, die unsere Kunden mit uns machen.</p>
+
+                <h2>Unsere Mission</h2>
+                <p>Unsere Mission ist es, der führende Anbieter professioneller Transportdienstleistungen in Belgien zu sein. Wir streben danach, durch konstante Qualität, Innovation und Kundenzufriedenheit neue Maßstäbe in der Branche zu setzen. Dabei legen wir besonderen Wert auf Nachhaltigkeit, soziale Verantwortung und die kontinuierliche Weiterentwicklung unserer Dienstleistungen.</p>
+
+                <p>Wir möchten nicht nur ein Transportdienstleister sein, sondern ein verlässlicher Partner für unsere Kunden. Ob Sie regelmäßig unsere Dienste in Anspruch nehmen oder nur gelegentlich – wir behandeln jede Fahrt mit der gleichen Professionalität und Sorgfalt. Unser Ziel ist es, Ihre Mobilität zu erleichtern und Ihnen Zeit und Stress zu ersparen.</p>
+
+                <h2>Warum Inter Driver wählen?</h2>
+                <p>Es gibt viele Gründe, warum Kunden sich für Inter Driver entscheiden. Einer der wichtigsten ist unsere Erfahrung. Mit jahrelanger Tätigkeit in der Transportbranche haben wir ein tiefes Verständnis für die Bedürfnisse unserer Kunden entwickelt. Wir wissen, dass Pünktlichkeit, Komfort und Zuverlässigkeit keine optionalen Extras sind, sondern grundlegende Anforderungen.</p>
+
+                <p>Unser Team besteht aus hochqualifizierten Fachleuten, die ihre Arbeit mit Leidenschaft ausführen. Jeder unserer Fahrer wird sorgfältig ausgewählt und durchläuft ein umfassendes Training, das sowohl technische Fahrkompetenz als auch exzellenten Kundenservice umfasst. Darüber hinaus werden unsere Mitarbeiter regelmäßig geschult, um sicherzustellen, dass sie mit den neuesten Entwicklungen in der Branche vertraut sind.</p>
+
+                <p>Wir investieren kontinuierlich in unsere Fahrzeugflotte, um Ihnen stets moderne, sichere und komfortable Transportmittel anbieten zu können. Alle Fahrzeuge werden nach strengen Wartungsplänen gepflegt und regelmäßig inspiziert. Sicherheit hat für uns oberste Priorität, weshalb wir keine Kompromisse eingehen, wenn es um die Instandhaltung unserer Flotte geht.</p>
+
+                <h2>Unser Team</h2>
+                <p>Das Herzstück von Inter Driver sind unsere Mitarbeiter. Ohne unser engagiertes Team wäre es nicht möglich, den hohen Standard zu halten, für den wir bekannt sind. Unsere Fahrer sind nicht nur Experten hinter dem Steuer, sondern auch ausgezeichnete Gastgeber, die dafür sorgen, dass sich jeder Fahrgast wohlfühlt.</p>
+
+                <p>Neben unseren Fahrern verfügen wir über ein kompetentes Verwaltungsteam, das sich um Buchungen, Kundenanfragen und die Koordination unserer Dienstleistungen kümmert. Dieser ganzheitliche Ansatz stellt sicher, dass jeder Aspekt Ihrer Erfahrung mit Inter Driver perfekt abgestimmt ist.</p>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div class="container">
+                <h2>Unsere Werte</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <span class="value-icon">🎯</span>
+                        <h3>Excellence</h3>
+                        <p>Wir streben nach Exzellenz in allem, was wir tun, und setzen die höchsten Standards für unsere Dienstleistungen.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🤝</span>
+                        <h3>Integrität</h3>
+                        <p>Ehrlichkeit und Transparenz sind die Grundlage unserer Geschäftsbeziehungen mit Kunden und Partnern.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">💚</span>
+                        <h3>Verantwortung</h3>
+                        <p>Wir übernehmen Verantwortung für unsere Umwelt und engagieren uns für nachhaltige Transportlösungen.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">⭐</span>
+                        <h3>Kundenzufriedenheit</h3>
+                        <p>Die Zufriedenheit unserer Kunden ist unser wichtigstes Ziel und der Maßstab für unseren Erfolg.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container content-section">
+                <div class="author-bio">
+                    <p class="byline">Verfasst von</p>
+                    <div class="author-header">
+                        <div class="author-avatar">MW</div>
+                        <div class="author-info">
+                            <h3>Michael Weber</h3>
+                            <p class="author-title">Transportexperte und Geschäftsführer</p>
+                            <p class="author-expertise">Fachgebiet: Transportlogistik, Kundenservice & Flottenmanagement</p>
+                        </div>
+                    </div>
+                    <p>Mit über 15 Jahren Erfahrung in der Transportbranche hat Michael Weber Inter Driver zu einem führenden Anbieter professioneller Fahrdienste in Belgien entwickelt. Seine Leidenschaft für herausragenden Kundenservice und seine tiefgreifenden Kenntnisse in Transportlogistik haben das Unternehmen geprägt und zu seinem heutigen Erfolg geführt. Michael glaubt fest daran, dass Innovation und Tradition Hand in Hand gehen können, um modernste Transportlösungen mit bewährter Zuverlässigkeit zu verbinden.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Inter Driver</h3>
+                    <p>Ihr zuverlässiger Partner für professionelle Transportdienstleistungen in Belgien.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Schnelllinks</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Datenschutzerklärung</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Inter Driver. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

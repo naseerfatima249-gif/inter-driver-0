@@ -1,0 +1,15 @@
+# robots.txt for Inter Driver
+# www.inter-driver.onrender.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: http://inter-driver.onrender.app/sitemap.xml
+
+# Crawl-delay for all bots (optional)
+Crawl-delay: 1
+
+# Block access to specific files/directories if needed
+# Disallow: /private/
+# Disallow: /temp/
